@@ -18,8 +18,20 @@ console.log(length); // Output: 4
 let firstFruit = fruit[0]; // Accessing first element
 // console.log(firstFruit); // Output: Banana
 
-fruit.length = 2; // Modifying length property
+// fruit.length = 2; // Modifying length property
 // console.log(fruit); // Output: [ 'Banana', 'Orange' ]
 
 let myList = fruit.toString(); // Converting array to string
-console.log(myList); // Output: Banana,Orange
+// console.log(myList); // Output: Banana,Orange
+
+// array at() method
+let lastFruit = fruit.at(-1); // Accessing last element using at() method
+console.log(lastFruit); // Output: Mango
+
+// Join() method
+let fruitString = fruit.join(" - "); // Joining array elements into a string
+console.log(fruitString); // Output: Banana - Orange - Apple - Mango
+
+// concat() method
+let moreFruits = ["Pineapple", "Grapes"]; 
+let allFruits = fruit.concat(moreFruits); // Concatenating two arrays
