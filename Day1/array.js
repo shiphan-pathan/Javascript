@@ -35,3 +35,10 @@ console.log(fruitString); // Output: Banana - Orange - Apple - Mango
 // concat() method
 let moreFruits = ["Pineapple", "Grapes"]; 
 let allFruits = fruit.concat(moreFruits); // Concatenating two arrays
+console.log(allFruits); // Output: [ 'Banana', 'Orange', 'Apple', 'Mango', 'Pineapple', 'Grapes' ]
+
+//flat() method
+let nestedArray = [1, 2, [3, 4], [5, 6]];
+let flatArray = nestedArray.flat(); // Flattening nested array
+console.log(flatArray); // Output: [ 1, 2, 3, 4, 5, 6 ]
+
