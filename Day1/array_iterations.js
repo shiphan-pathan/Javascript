@@ -50,3 +50,41 @@ cities.forEach(city => console.log(`City: ${city}`));
 // City: Chicago
 // City: Houston
 
+// map array iteration method creates a new array populated with the results of calling a provided function on every element in the calling array.
+const numbersForMap = [1, 2, 3, 4, 5];
+const squaredNumbers = numbersForMap.map(num => num * num);
+console.log(`Squared Numbers: ${squaredNumbers}`); // Output: Squared Numbers: 1,4,9,16,25
+
+// example of using map to convert an array of strings to uppercase
+const fruits = ['apple', 'banana', 'cherry', 'date'];
+const uppercasedFruits = fruits.map(fruit => fruit.toUpperCase());
+console.log(`Uppercased Fruits: ${uppercasedFruits}`); // Output: Uppercased Fruits: APPLE,BANANA,CHERRY,DATE
+
+// example of using map to extract a specific property from an array of objects
+const users = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Charlie', age: 35 }
+];
+const userNames = users.map(user => user.name);
+console.log(`User Names: ${userNames}`); // Output: User Names: Alice,Bob,Charlie
+
+// flatMap array iteration method first maps each element using a mapping function, then flattens the result into a new array.
+const nestedNumbers = [1, 2, 3];
+const flatMappedNumbers = nestedNumbers.flatMap(num => [num, num * 2]);
+console.log(`FlatMapped Numbers: ${flatMappedNumbers}`); // Output: FlatMapped Numbers: 1,2,2,4,3,6
+
+// filter array iteration method creates a new array with all elements that pass the test implemented by the provided function.
+const mixedNumbers = [10, 12, 20, 25, 30, 35];
+const evenNumbers = mixedNumbers.filter(num => num % 2 === 0);
+console.log(`Even Numbers: ${evenNumbers}`); // Output: Even Numbers: 10,12,20,30
+
+// reduce array iteration method executes a reducer function on each element of the array, resulting in a single output value.
+const values = [5, 10, 15, 20];
+const total = values.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(`Total: ${total}`); // Output: Total: 50
+
+// example of using reduce to find the maximum value in an array
+const numsForMax = [3, 7, 2, 9, 4];
+const maxNum = numsForMax.reduce((max, current) => (current > max ? current : max), numsForMax[0]);
+console.log(`Maximum Number: ${maxNum}`); // Output: Maximum Number: 9
