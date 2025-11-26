@@ -88,3 +88,4 @@ console.log(`Total: ${total}`); // Output: Total: 50
 const numsForMax = [3, 7, 2, 9, 4];
 const maxNum = numsForMax.reduce((max, current) => (current > max ? current : max), numsForMax[0]);
 console.log(`Maximum Number: ${maxNum}`); // Output: Maximum Number: 9
+
