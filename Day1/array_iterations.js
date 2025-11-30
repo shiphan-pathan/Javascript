@@ -89,3 +89,12 @@ const numsForMax = [3, 7, 2, 9, 4];
 const maxNum = numsForMax.reduce((max, current) => (current > max ? current : max), numsForMax[0]);
 console.log(`Maximum Number: ${maxNum}`); // Output: Maximum Number: 9
 
+// every array iteration method tests whether all elements in the array pass the test implemented by the provided function.
+const testNumbers = [2, 4, 6, 8, 10];
+const allEven = testNumbers.every(num => num % 2 === 0);
+console.log(`All numbers are even: ${allEven}`); // Output: All numbers are even: true
+
+//example of using every to check if all strings in an array have length greater than 3
+const stringArray = ['tree', 'bush', 'flower', 'grass'];
+const allLongerThanThree = stringArray.every(str => str.length > 3);
+console.log(`All strings have length greater than 3: ${allLongerThanThree}`); // Output: All strings have length greater than 3: false 
