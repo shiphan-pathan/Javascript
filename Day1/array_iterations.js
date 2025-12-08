@@ -98,3 +98,4 @@ console.log(`All numbers are even: ${allEven}`); // Output: All numbers are even
 const stringArray = ['tree', 'bush', 'flower', 'grass'];
 const allLongerThanThree = stringArray.every(str => str.length > 3);
 console.log(`All strings have length greater than 3: ${allLongerThanThree}`); // Output: All strings have length greater than 3: false 
+
