@@ -1,0 +1,79 @@
+Beginner Level (Must-Know Basics)
+Arrays
+
+Reverse an array
+
+Find the largest / smallest element
+
+Remove duplicates from an array
+
+Find second largest element
+
+Rotate an array by k steps
+
+Find missing number in an array
+
+Check if array is sorted
+
+Merge two sorted arrays
+
+Strings
+
+Reverse a string
+
+Check palindrome
+
+Count vowels and consonants
+
+Find first non-repeating character
+
+Check if two strings are anagrams
+
+Find longest word in a sentence
+
+Numbers
+
+Check prime number
+
+Fibonacci series
+
+Factorial of a number
+
+Check Armstrong number
+
+Sum of digits
+
+Reverse a number
+
+🟡 Intermediate Level (Very Common in Interviews)
+Arrays
+
+Find duplicate elements
+
+Find intersection of two arrays
+
+Move all zeros to end
+
+Find maximum subarray sum (Kadane’s Algorithm)
+
+Sort array without using sort()
+
+Find frequency of elements
+
+Strings
+
+Longest substring without repeating characters
+
+Check if string rotation
+
+Count words in a string
+
+Compress a string (aabcc → a2b1c2)
+
+Hashing / Objects
+
+Find element with maximum frequency
+
+Check if two arrays are equal
+
+Group anagrams
