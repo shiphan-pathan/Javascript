@@ -32,3 +32,4 @@ console.log(removeDuplicateUsingSet([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
 // 1. We create a new Set from the input array `arr`. A Set automatically removes duplicate values.
 // 2. We then convert the Set back into an array using `Array.from()`.
 // 3. Finally, we return the new array which contains only unique elements.
+
