@@ -1,15 +1,3 @@
-
-// const input = "A1B2C3";
-// let result = "";
-
-// for (let i = 0; i < input.length; i += 2) {
-//   const char = input[i];
-//   const count = parseInt(input[i + 1], 10);
-//   result += char.repeat(count);
-// }
-// console.log(result); // Output: "ABBBCCCCC"
-
-// without using any method
 const input = "A1B2C3";
 let result = "";
 
