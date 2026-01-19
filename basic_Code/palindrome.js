@@ -1,12 +1,13 @@
-let str = "Madam";
-let isPalindrome = true;
+let str = "madam";
+let reversed = "";
 
-for(let i = 0; i < str.length / 2; i++) {
-    if(str[i] !== str[str.length - 1 - i]) {
-        isPalindrome = false;
-        break;
-    }
-
+for (let i = str.length - 1; i >= 0; i--) {
+  reversed += str[i];
 }
 
-console.log(isPalindrome);
+if (str === reversed) {
+  console.log("Palindrome");
+} else {
+  console.log("Not Palindrome");
+}
+
