@@ -1,15 +1,15 @@
-function reverseArray(arr) {
-  let left = 0;
-  let right = arr.length - 1;
+let arr = [1, 2, 3, 4, 5];
 
-  while (left < right) {
-    let temp = arr[left];
-    arr[left] = arr[right];
-    arr[right] = temp;
+let start = 0;
+let end = arr.length - 1;
 
-    left++;
-    right--;
-  }
-  return arr;
+while (start < end) {
+  let temp = arr[start];
+  arr[start] = arr[end];
+  arr[end] = temp;
+
+  start++;
+  end--;
 }
-console.log(reverseArray([1, 2, 3, 4, 5])); // [5, 4, 3, 2, 1]
+
+console.log(arr); // [5, 4, 3, 2, 1]

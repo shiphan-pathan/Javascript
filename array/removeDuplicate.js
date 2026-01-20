@@ -1,18 +1,23 @@
-function removeDuplicate(arr) {
+let arr = [1, 2, 3, 2, 4, 1];
+let unique = [];
 
-    let map = {};
-    let result = [];
+for (let i = 0; i < arr.length; i++) {
+  let isDuplicate = false;
 
-    for(let i=0; i< arr.length; i++) {
-
-        if(!map[arr[i]]) {
-            map[arr[i]] = true;
-            result.push(arr[i]);
-        }
+  for (let j = 0; j < unique.length; j++) {
+    if (arr[i] === unique[j]) {
+      isDuplicate = true;
+      break;
     }
-    return result;
+  }
+
+  if (!isDuplicate) {
+    unique.push(arr[i]);
+  }
 }
-console.log(removeDuplicate([1, 2, 2, 3, 4, 4, 5])); // [1, 2, 3, 4, 5]
+
+console.log(unique); // [1, 2, 3, 4]
+
 
 // explanation:
 // 1. We create an empty object `map` to keep track of the elements we have seen.
