@@ -14,3 +14,19 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(arr);
+
+
+// sorting in descending order
+let arrDesc = [5, 2, 8, 1, 3];
+let tempDesc;
+
+for (let i = 0; i < arrDesc.length; i++) {
+  for (let j = i + 1; j < arrDesc.length; j++) {
+    if (arrDesc[i] < arrDesc[j]) {
+      tempDesc = arrDesc[i];
+      arrDesc[i] = arrDesc[j];
+      arrDesc[j] = tempDesc;
+    }
+  }
+}
+console.log(arrDesc);
