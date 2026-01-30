@@ -1,5 +1,5 @@
 let str1 = "listen";
-let str2 = "mute";
+let str2 = "silent";
 
 if (str1.length !== str2.length) {
   console.log("Not Anagram");
