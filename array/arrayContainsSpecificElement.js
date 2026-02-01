@@ -12,3 +12,18 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(found); // true
+
+
+function arrayContent(arr, target){
+  
+  let found = false;
+  
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === target){
+      found = true;
+    }
+  }
+  return target;
+}
+
+console.log(arrayContent(arr, target)); // 30
