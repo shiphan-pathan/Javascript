@@ -12,3 +12,25 @@ for (let i = 0; i < arr.length; i++) {
 
 console.log("Even:", evenCount); // 3
 console.log("Odd:", oddCount);   // 3
+
+// function to count even and odd numbers in an array
+
+function countEvenodd(arr){
+  let evencount = 0;
+  let oddcount = 0;
+  
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] % 2 === 0){
+      evencount++
+    }else{
+      oddcount ++
+    }
+  }
+  
+  return {
+    even : evencount,
+    odd: oddcount
+  }
+}
+
+console.log(countEvenodd(arr))

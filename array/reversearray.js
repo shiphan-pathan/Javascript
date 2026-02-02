@@ -13,3 +13,21 @@ while (start < end) {
 }
 
 console.log(arr); // [5, 4, 3, 2, 1]
+
+// function to reverse an array
+
+function reversearr(arr){
+  let start = 0;
+  let end = arr.length - 1;
+  
+  while(start < end){
+    let temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp
+    
+    start ++;
+    end --;
+  }
+  return arr;
+}
+console.log(reversearr(arr))
